@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"tailwindCSS.experimental.configFile": "frontend/src/assets/main.css",
+	}
+}

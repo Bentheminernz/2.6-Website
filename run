@@ -1,0 +1,40 @@
+#!/bin/bash
+
+echo -e "Choose an action: 1) RunServer (localhost);   2) RunServer (network);   3) Migrations;   4) Shell;   5) Collectstatic;   6) Exit;"
+read -p "Enter the number of your choice: " choice
+
+case $choice in
+    1)
+        echo -e "Running runserver (localhost)..."
+        python ./backend/manage.py runserver 8070
+        ;;
+
+    2) 
+        echo -e "Running runserver..."
+        python ./backend/manage.py runserver 0.0.0.0:8070
+        ;;
+
+    3)
+        echo -e "Running make migrations..."
+        python ./backend/manage.py makemigrations
+        echo -e "Running migrate..."
+        python ./backend/manage.py migrate
+        ;;
+
+    4)
+        echo -e "Running shell..."
+        python ./backend/manage.py shell
+        ;;
+
+    5)
+        echo -e "Collecting Static Files..."
+        ./manage.py collectstatic
+        ;;
+
+    6)
+        echo -e "Exiting..."
+        ;;
+    *)
+        echo -e "Invalid choice. Please run the script again and choose a valid option."
+        ;;
+esac

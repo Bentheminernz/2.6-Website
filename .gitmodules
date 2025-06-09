@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/Bentheminernz/2.6-Website-Frontend
+[submodule "backend"]
+	path = backend
+	url = https://github.com/Bentheminernz/2.6-Project-Backend

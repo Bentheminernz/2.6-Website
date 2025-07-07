@@ -130,7 +130,7 @@ dist
 .pnp.*
 
 
-# Added by Ben
+# Added by Me
 .DS_Store
 *.DS_Store
 .paw

@@ -84,6 +84,6 @@ bun vite
 
 Once both servers are running:
 - Backend: `http://127.0.0.1:8070` (You can access the admin portal at `http://127.0.0.1:8070/admin`)
-- Frontend: Check your terminal for the Vite development server URL (typically `http://localhost:5173`)
+- Frontend: Check your terminal for the Vite development server URL (for this project it should be `http://localhost:5174`)
 
 Make sure both servers are running simultaneously for the application to work properly.
